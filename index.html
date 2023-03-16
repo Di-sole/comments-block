@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Comments</title>
+</head>
+<body>
+    <div class="container">
+        <div class="comments-block">
+            <div class="comment">
+                <div class="comment__content">
+                    <div class="comment__data">
+                        <span class="author">Oleg Pavlov</span>
+                        <span class="time">вчера в 20:00</span>
+                    </div>
+                    <div class="comment__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quos velit quis? Nihil dolorum incidunt maiores quaerat. 
+                        Ut labore aliquid tempora deserunt id, laborum, repellat nostrum consectetur eius ipsum explicabo?
+                    </div>
+                </div>
+                <div class="comment__actions">
+                    <img class="icon btn_delete" src="./img/icons8-delete.svg" alt="delete">
+                    <img class="icon btn_like" src="./img/icons8-like.png" alt="like">
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment__content">
+                    <div class="comment__data">
+                        <span class="author">Ivan Ivanov</span>
+                        <span class="time">сегодня в 22:00</span>
+                    </div>
+                    <div class="comment__text">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto quos velit quis?
+                    </div>
+                </div>
+                <div class="comment__actions">
+                    <img class="icon btn_delete" src="./img/icons8-delete.svg" alt="delete">
+                    <img class="icon btn_like" src="./img/icons8-like.png" alt="like">
+                </div>
+            </div>
+        </div>
+
+        <form action="submit" class="form" name="form">
+            <div class="input-wrapper">
+                <input type="text" name="userName" id="userName" class="input input_name" placeholder="Имя">
+                <input type="text" name="date" id="date" class="input input_date" placeholder="Дата (дд.мм.гггг)">  
+            </div>
+            <textarea name="text" id="text" class="input input_text" rows="5" placeholder="Написать комментарий..."></textarea>
+            <button type="submit" class="btn btn_submit">Отправить</button>
+        </form>
+    </div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
